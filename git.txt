@@ -1,13 +1,24 @@
-Tenho usado com sucesso apenas estes dois comandos abaixo quando faço diversas alterações em uma branch e desejo me desfazer de todas elas sem ter commitado nada ainda.
-
-O primeiro comando é para reverter todas as alterações em arquivos que estavam versionados:
-
+// Tenho usado com sucesso apenas estes dois comandos abaixo quando faço diversas alterações em uma branch e desejo me desfazer de todas elas sem ter commitado nada ainda.
+// O primeiro comando é para reverter todas as alterações em arquivos que estavam versionados:
 git checkout -- .
-O segundo é para apagar todos os arquivos e diretórios criados:
 
+// O segundo é para apagar todos os arquivos e diretórios criados:
 git clean -f -d
-Ao último comando, você ainda pode acrescentar o -x para também apagar arquivos que foram criados mas estão sendo ignorados pelo git (portanto, não aparecem no git status).
 
-Se você tiver adicionado arquivos no index (usando git add), você precisa aplicar o seguinte comando antes dos comandos acima, para removê-los do index:
-
+// Ao último comando, você ainda pode acrescentar o -x para também apagar arquivos que foram criados mas estão sendo ignorados pelo git (portanto, não aparecem no git status).
+// Se você tiver adicionado arquivos no index (usando git add), você precisa aplicar o seguinte comando antes dos comandos acima, para removê-los do index:
 git reset HEAD .
+
+// delete branch locally
+git branch -d localBranchName
+
+// delete branch remotely
+git push origin --delete remoteBranchName
+
+// Para criar uma branch  local
+
+git checkout -b <branch-name>
+
+// Para enviá-lo ao repositório remoto , faça:
+
+git push -u origin <branch-name>
