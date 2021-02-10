@@ -18,6 +18,9 @@ git push origin --delete remoteBranchName
 // Para criar uma branch  local
 
 git checkout -b <branch-name>
+ou
+git branch <branch-name>
+git checkout <branch-name>
 
 // Para enviá-lo ao repositório remoto , faça:
 
