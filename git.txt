@@ -25,3 +25,6 @@ git checkout <branch-name>
 // Para enviá-lo ao repositório remoto , faça:
 
 git push -u origin <branch-name>
+
+// Renomear branch
+git branch -m new-name
