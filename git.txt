@@ -37,3 +37,8 @@ git branch -r
 
 To see all local and remote branches, run this command: 
 git branch -a
+
+// Clone a specific branch
+git clone --branch <branchname> <remote-repo-url>
+or
+git clone -b <branchname> <remote-repo-url>
