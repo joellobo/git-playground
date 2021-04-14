@@ -28,3 +28,12 @@ git push -u origin <branch-name>
 
 // Renomear branch
 git branch -m new-name
+
+To see local branches, run this command: 
+git branch
+
+To see remote branches, run this command: 
+git branch -r
+
+To see all local and remote branches, run this command: 
+git branch -a
